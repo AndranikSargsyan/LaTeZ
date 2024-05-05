@@ -1,0 +1,40 @@
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\RequirePackage[authoryear,round]{natbib}
+\usepackage{fontspec}
+\usepackage{indentfirst}
+\usepackage[a4paper]{geometry}
+\usepackage{caption}
+\usepackage{titlesec}
+
+ % Set font to Times New Roman for English text
+\setmainfont{Times New Roman}
+\fontsize{12pt}{12pt}\selectfont
+
+\hyphenpenalty=50
+\exhyphenpenalty=50
+\tolerance=1000
+\emergencystretch=5em
+
+\linespread{1.5}
+
+\geometry{
+    a4paper,
+    total={210mm,297mm},
+    left=30mm,
+    right=15mm,
+    top=20mm,
+    bottom=25mm,
+}
+
+\DeclareCaptionLabelFormat{bold}{\textbf{#1 #2}}
+\captionsetup[figure]{font={small, stretch=1.1}, justification=centering, labelfont=bf}
+\captionsetup[table]{font={small, stretch=1.1}, justification=centering, labelfont=bf}
+
+% Format section titles
+\titleformat{\section}
+  {\normalfont\fontsize{12}{15}\bfseries\MakeUppercase}{\thesection}{1em}{}
+
+% Format subsection titles
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{15}\bfseries}{\thesubsection}{1em}{}
