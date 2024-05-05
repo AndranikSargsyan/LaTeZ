@@ -6,6 +6,8 @@
 \usepackage[a4paper]{geometry}
 \usepackage{caption}
 \usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
 
  % Set font to Times New Roman for English text
 \setmainfont{Times New Roman}
@@ -38,3 +40,11 @@
 % Format subsection titles
 \titleformat{\subsection}
   {\normalfont\fontsize{12}{15}\bfseries}{\thesubsection}{1em}{}
+
+\definecolor{latezblue}{rgb}{0.21,0.49,0.74}
+\hypersetup{
+    breaklinks,
+    colorlinks,
+    linkcolor=black,
+    citecolor=latezblue
+}
